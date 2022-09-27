@@ -10,6 +10,13 @@ import {
   PageTitleContainer,
   Route,
 } from '../../components/common/Common.styles'
+import {
+  Button,
+  ButtonContainer,
+  Form,
+  Input,
+  TextArea,
+} from './Contact.styles'
 import Header from '../../components/header/Header'
 import { useNavigate } from 'react-router-dom'
 
@@ -37,7 +44,17 @@ const Contact = () => {
             questions or offer any help.
           </PageDescription>
         </PageDescriptionContainer>
-        <PageBody>hello</PageBody>
+        <PageBody>
+          <Form>
+            <Input placeholder='Name' />
+            <Input placeholder='Phone' />
+            <Input placeholder='Email' />
+            <TextArea placeholder='Message' />
+            <ButtonContainer>
+              <Button>Send</Button>
+            </ButtonContainer>
+          </Form>
+        </PageBody>
       </PageContent>
     </Container>
   )
