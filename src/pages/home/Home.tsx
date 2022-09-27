@@ -7,8 +7,11 @@ import {
   ButtonContainer,
   Button,
 } from './Home.styles'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+  const navigate = useNavigate()
+
   return (
     <Container>
       <HeroContainer>
@@ -16,7 +19,9 @@ const Home = () => {
           <HeroTexts>Siegfred Gamboa</HeroTexts>
           <HeroSubtexts>Photographer, Helsinki</HeroSubtexts>
           <ButtonContainer>
-            <Button>VIEW ALL GALLERY</Button>
+            <Button onClick={() => navigate('/portfolio')}>
+              VIEW ALL GALLERY
+            </Button>
           </ButtonContainer>
         </ContentContainer>
       </HeroContainer>
