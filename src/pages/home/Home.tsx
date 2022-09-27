@@ -7,6 +7,7 @@ import {
   ButtonContainer,
   Button,
 } from './Home.styles'
+import SocialMedia from '../../components/social-media/SocialMedia'
 import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
               VIEW ALL GALLERY
             </Button>
           </ButtonContainer>
+          <SocialMedia />
         </ContentContainer>
       </HeroContainer>
     </Container>
