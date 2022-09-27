@@ -1,11 +1,15 @@
 import {
   Container,
   HomeRoute,
+  PageBody,
+  PageContent,
+  PageDescription,
+  PageDescriptionContainer,
   PageRouteContainer,
   PageTitle,
   PageTitleContainer,
   Route,
-} from './Contact.styles'
+} from '../../components/common/Common.styles'
 import Header from '../../components/header/Header'
 import { useNavigate } from 'react-router-dom'
 
@@ -23,6 +27,18 @@ const Contact = () => {
         <span>/</span>
         <Route>CONTACT</Route>
       </PageRouteContainer>
+      <PageContent>
+        <PageDescriptionContainer>
+          <PageDescription>
+            You can contact me any way that is convenient for you. I am
+            available 24/7 via fax, email or telephone. You can also use a quick
+            contact form located on this page to ask a question about my
+            services and projects I work on. I would be happy to answer your
+            questions or offer any help.
+          </PageDescription>
+        </PageDescriptionContainer>
+        <PageBody>hello</PageBody>
+      </PageContent>
     </Container>
   )
 }

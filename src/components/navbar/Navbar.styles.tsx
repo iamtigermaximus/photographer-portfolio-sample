@@ -92,9 +92,7 @@ export const MobileMenuContainer = styled.ul`
   top: 0;
   width: 50%;
   height: 100vh;
-  // background: #13274f;
-  background: black;
-  //opacity: 0.6;
+  background: ${colors.matteBlack};
   transform: translateX(0%);
   transition: transform 0.3s ease-out;
   z-index: 1;
