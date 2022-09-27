@@ -33,6 +33,10 @@ export const BrandLinkItem = styled.h1`
   color: ${colors.offWhite};
   font-size: 20px;
   letter-spacing: 0.1rem;
+
+  @media (min-width: ${bp.md}) {
+    font-size: 30px;
+  }
 `
 
 export const BurgerMenu = styled.div`

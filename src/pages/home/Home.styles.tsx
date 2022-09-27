@@ -31,29 +31,30 @@ export const ContentContainer = styled.div`
   color: ${colors.darkGray};
 `
 export const HeroTexts = styled.h1`
-  font-size: 30px;
-  font-family: 'Helvetica', sans-serif;
-  padding: 10px;
-  letter-spacing: 0.3rem;
-
-  @media (min-width: ${bp.sm}) {
-    font-size: 50px;
-  }
-  @media (min-width: ${bp.md}) {
-    font-size: 70px;
-  }
-  @media (min-width: ${bp.lg}) {
-    font-size: 80px;
-  }
-`
-export const HeroSubtexts = styled.h1`
-  font-size: 20px;
+  font-size: 25px;
   font-family: 'Helvetica', sans-serif;
   padding: 10px;
   letter-spacing: 0.3rem;
 
   @media (min-width: ${bp.sm}) {
     font-size: 30px;
+  }
+
+  @media (min-width: ${bp.md}) {
+    font-size: 60px;
+  }
+  @media (min-width: ${bp.lg}) {
+    font-size: 80px;
+  }
+`
+export const HeroSubtexts = styled.h1`
+  font-size: 15px;
+  font-family: 'Helvetica', sans-serif;
+  padding: 10px;
+  letter-spacing: 0.3rem;
+
+  @media (min-width: ${bp.sm}) {
+    font-size: 20px;
   }
 `
 export const ButtonContainer = styled.div`
