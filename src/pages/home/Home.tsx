@@ -16,8 +16,8 @@ const Home = () => {
     <Container>
       <HeroContainer>
         <ContentContainer>
-          <HeroTexts>Siegfred Gamboa</HeroTexts>
-          <HeroSubtexts>Photographer, Helsinki</HeroSubtexts>
+          <HeroTexts>SIEGFRED GAMBOA</HeroTexts>
+          <HeroSubtexts>PHOTOGRAPHER, HELSINKI</HeroSubtexts>
           <ButtonContainer>
             <Button onClick={() => navigate('/portfolio')}>
               VIEW ALL GALLERY
