@@ -35,6 +35,7 @@ export const HeroTexts = styled.h1`
   font-family: 'Helvetica', sans-serif;
   padding: 10px;
   letter-spacing: 0.3rem;
+  text-shadow: 2px 2px 4px black;
 
   @media (min-width: ${bp.sm}) {
     font-size: 30px;
@@ -52,6 +53,7 @@ export const HeroSubtexts = styled.h1`
   font-family: 'Helvetica', sans-serif;
   padding: 10px;
   letter-spacing: 0.3rem;
+  text-shadow: 2px 2px 4px black;
 
   @media (min-width: ${bp.sm}) {
     font-size: 20px;
@@ -70,6 +72,7 @@ export const Button = styled.button`
   border: 1px solid ${colors.darkGray};
   border-radius: 5px;
   letter-spacing: 0.3rem;
+  text-shadow: 2px 2px 4px black;
 
   @media (min-width: ${bp.md}) {
     padding: 20px;
