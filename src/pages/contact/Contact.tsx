@@ -1,8 +1,15 @@
-import React from 'react'
-import { Container } from './Contact.styles'
+import { Container, PageTitle, PageTitleContainer } from './Contact.styles'
+import Header from '../../components/header/Header'
 
 const Contact = () => {
-  return <Container>Contact</Container>
+  return (
+    <Container>
+      <Header />
+      <PageTitleContainer>
+        <PageTitle>CONTACT</PageTitle>
+      </PageTitleContainer>
+    </Container>
+  )
 }
 
 export default Contact

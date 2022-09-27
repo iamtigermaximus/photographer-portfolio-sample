@@ -6,3 +6,16 @@ export const Container = styled.div`
   width: 100vw;
   height: 100vh;
 `
+
+export const PageTitleContainer = styled.div`
+  padding-top: 15vh;
+`
+
+export const PageTitle = styled.h1`
+  color: ${colors.offWhite};
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.3rem;
+`

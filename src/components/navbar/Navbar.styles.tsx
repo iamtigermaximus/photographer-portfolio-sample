@@ -4,7 +4,7 @@ import colors from '../../utils/colors'
 
 export const NavbarContainer = styled.nav`
   width: 100vw;
-  height: 10vh;
+  height: 15vh;
   // background: #13274f;
   background: transparent;
   display: flex;

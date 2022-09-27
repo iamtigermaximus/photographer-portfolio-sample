@@ -1,8 +1,15 @@
-import React from 'react'
-import { Container } from './Services.styles'
+import { Container, PageTitle, PageTitleContainer } from './Services.styles'
+import Header from '../../components/header/Header'
 
 const Services = () => {
-  return <Container>Services</Container>
+  return (
+    <Container>
+      <Header />
+      <PageTitleContainer>
+        <PageTitle>SERVICES</PageTitle>
+      </PageTitleContainer>
+    </Container>
+  )
 }
 
 export default Services
