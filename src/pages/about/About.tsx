@@ -10,9 +10,16 @@ import {
   PageTitle,
   PageTitleContainer,
   Route,
+  ImageContainer,
+  Image,
+  ImageWrapper,
 } from '../../components/common/Common.styles'
 import Header from '../../components/header/Header'
 import { useNavigate } from 'react-router-dom'
+import PG7 from '../../assets/pg7.jpg'
+import PG8 from '../../assets/pg8.jpg'
+import PG9 from '../../assets/pg9.jpg'
+import PG10 from '../../assets/pg10.jpg'
 
 const About = () => {
   const navigate = useNavigate()
@@ -42,7 +49,22 @@ const About = () => {
             versija.
           </PageDescription>
         </PageDescriptionContainer>
-        <PageBody>hello</PageBody>
+        <PageBody>
+          <ImageWrapper>
+            <ImageContainer>
+              <Image src={PG7} />
+            </ImageContainer>
+            <ImageContainer>
+              <Image src={PG8} />
+            </ImageContainer>
+            <ImageContainer>
+              <Image src={PG9} />
+            </ImageContainer>
+            <ImageContainer>
+              <Image src={PG10} />
+            </ImageContainer>
+          </ImageWrapper>
+        </PageBody>
       </PageContent>
     </Container>
   )
