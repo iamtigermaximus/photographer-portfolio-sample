@@ -60,7 +60,7 @@ export const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
 `
 export const Button = styled.button`
   padding: 10px;
