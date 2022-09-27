@@ -3,15 +3,16 @@ import { Link } from 'react-router-dom'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import {
   NavbarContainer,
-  BrandContainer,
+  //BrandContainer,
   LinkItemContainer,
-  BrandLinkItem,
+  //BrandLinkItem,
   MenuContainer,
-  NavbarLinks,
+  //NavbarLinks,
   LinkItem,
   BurgerMenu,
   MobileMenuContainer,
   MobileNavbarLinks,
+  CloseIcon,
 } from './Navbar.styles'
 
 const Navbar = () => {
@@ -20,7 +21,7 @@ const Navbar = () => {
 
   return (
     <NavbarContainer>
-      <BrandContainer>
+      {/* <BrandContainer>
         <Link to='/'>
           <LinkItemContainer>
             <BrandLinkItem>SMG PHOTOGRAPHY</BrandLinkItem>
@@ -54,7 +55,8 @@ const Navbar = () => {
               <LinkItem>CONTACT</LinkItem>
             </Link>
           </LinkItemContainer>
-        </NavbarLinks>
+        </NavbarLinks> */}
+      <MenuContainer>
         <BurgerMenu onClick={categoryMenu}>
           {click ? <FaBars /> : <FaTimes />}
           <MobileMenuContainer
@@ -62,6 +64,9 @@ const Navbar = () => {
             onClick={categoryMenu}
           >
             <MobileNavbarLinks>
+              <CloseIcon onClick={categoryMenu}>
+                <FaTimes />
+              </CloseIcon>
               <LinkItemContainer>
                 <Link to='/'>
                   <LinkItem>HOME</LinkItem>
