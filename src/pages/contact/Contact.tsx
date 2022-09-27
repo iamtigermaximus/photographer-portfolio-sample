@@ -11,14 +11,19 @@ import {
   Route,
 } from '../../components/common/Common.styles'
 import {
+  Address,
   Button,
   ButtonContainer,
+  Contacts,
+  ContactsContainer,
   Form,
+  Icon,
   Input,
   TextArea,
 } from './Contact.styles'
 import Header from '../../components/header/Header'
 import { useNavigate } from 'react-router-dom'
+import { MdLocationPin, MdEmail, MdCall } from 'react-icons/md'
 
 const Contact = () => {
   const navigate = useNavigate()
@@ -53,6 +58,26 @@ const Contact = () => {
             <ButtonContainer>
               <Button>Send</Button>
             </ButtonContainer>
+            <ContactsContainer>
+              <Contacts>
+                <Icon>
+                  <MdLocationPin />
+                </Icon>
+                <Address>Paaskylanrinne 6 B50 Helsinki 00500 Finland</Address>
+              </Contacts>
+              <Contacts>
+                <Icon>
+                  <MdCall />
+                </Icon>
+                <Address>+358123456789</Address>
+              </Contacts>
+              <Contacts>
+                <Icon>
+                  <MdEmail />
+                </Icon>
+                <Address>siegy.gamboa@gmail.com</Address>
+              </Contacts>
+            </ContactsContainer>
           </Form>
         </PageBody>
       </PageContent>

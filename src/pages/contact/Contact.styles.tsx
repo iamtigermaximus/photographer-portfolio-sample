@@ -63,8 +63,40 @@ export const Button = styled.button`
   border: 1px solid ${colors.darkGray};
   border-radius: 5px;
   letter-spacing: 0.2rem;
+  width: 150px;
 
   @media (min-width: ${bp.md}) {
     padding: 20px;
   }
+`
+export const ContactsContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  margin: 30px;
+  padding: 10px;
+
+  @media (min-width: ${bp.sm}) {
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: ${bp.md}) {
+    width: 300px;
+    height: 300px;
+  }
+`
+export const Contacts = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 10px;
+`
+export const Icon = styled.div`
+  font-size: 40px;
+  color: white;
+`
+export const Address = styled.h1`
+  font-size: 18px;
+  color: white;
+  margin: 10px;
 `
