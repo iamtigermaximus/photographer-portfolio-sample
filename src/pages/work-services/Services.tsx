@@ -24,7 +24,6 @@ const Services = () => {
 
   useEffect(() => {
     axios.get('https://backend-website-media.herokuapp.com/').then((resp) => {
-      console.log(resp.data)
       setPhoto(resp.data.items)
     })
   }, [])
