@@ -15,17 +15,6 @@ import {
 import Header from '../../components/header/Header'
 import { PageRouteContainer } from '../contact/Contact.styles'
 import { useNavigate } from 'react-router-dom'
-// import BG1 from '../../assets/photog1.jpg'
-// import BG2 from '../../assets/photog2.jpg'
-// import BG3 from '../../assets/photog3.jpg'
-// import BG4 from '../../assets/photog4.jpg'
-// import PG1 from '../../assets/pg1.jpg'
-// import PG2 from '../../assets/pg2.jpg'
-// import PG3 from '../../assets/pg3.jpg'
-// import PG4 from '../../assets/pg4.jpg'
-// import PG5 from '../../assets/pg5.jpg'
-// import PG6 from '../../assets/pg6.jpg'
-
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 
