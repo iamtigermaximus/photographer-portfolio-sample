@@ -15,20 +15,30 @@ import {
 import Header from '../../components/header/Header'
 import { PageRouteContainer } from '../contact/Contact.styles'
 import { useNavigate } from 'react-router-dom'
-import BG1 from '../../assets/photog1.jpg'
-import BG2 from '../../assets/photog2.jpg'
-import BG3 from '../../assets/photog3.jpg'
-import BG4 from '../../assets/photog4.jpg'
-import PG1 from '../../assets/pg1.jpg'
-import PG2 from '../../assets/pg2.jpg'
-import PG3 from '../../assets/pg3.jpg'
-import PG4 from '../../assets/pg4.jpg'
-import PG5 from '../../assets/pg5.jpg'
-import PG6 from '../../assets/pg6.jpg'
+// import BG1 from '../../assets/photog1.jpg'
+// import BG2 from '../../assets/photog2.jpg'
+// import BG3 from '../../assets/photog3.jpg'
+// import BG4 from '../../assets/photog4.jpg'
+// import PG1 from '../../assets/pg1.jpg'
+// import PG2 from '../../assets/pg2.jpg'
+// import PG3 from '../../assets/pg3.jpg'
+// import PG4 from '../../assets/pg4.jpg'
+// import PG5 from '../../assets/pg5.jpg'
+// import PG6 from '../../assets/pg6.jpg'
+
+import axios from 'axios'
+import { useEffect, useState } from 'react'
 
 const Portfolio = () => {
   const navigate = useNavigate()
+  const [photo, setPhoto] = useState([])
 
+  useEffect(() => {
+    axios.get('https://backend-website-media.herokuapp.com/').then((resp) => {
+      console.log(resp.data)
+      setPhoto(resp.data.items)
+    })
+  }, [])
   return (
     <Container>
       <Header />
@@ -57,36 +67,11 @@ const Portfolio = () => {
         </PageDescriptionContainer>
         <PageBody>
           <ImageWrapper>
-            <ImageContainer>
-              <Image src={BG1} />
-            </ImageContainer>
-            <ImageContainer>
-              <Image src={BG2} />
-            </ImageContainer>
-            <ImageContainer>
-              <Image src={BG3} />
-            </ImageContainer>
-            <ImageContainer>
-              <Image src={BG4} />
-            </ImageContainer>
-            <ImageContainer>
-              <Image src={PG1} />
-            </ImageContainer>
-            <ImageContainer>
-              <Image src={PG2} />
-            </ImageContainer>
-            <ImageContainer>
-              <Image src={PG3} />
-            </ImageContainer>
-            <ImageContainer>
-              <Image src={PG4} />
-            </ImageContainer>
-            <ImageContainer>
-              <Image src={PG5} />
-            </ImageContainer>
-            <ImageContainer>
-              <Image src={PG6} />
-            </ImageContainer>
+            {photo.map((photo: any) => (
+              <ImageContainer key={photo._id}>
+                <Image src={photo.img} />
+              </ImageContainer>
+            ))}
           </ImageWrapper>
         </PageBody>
       </PageContent>
