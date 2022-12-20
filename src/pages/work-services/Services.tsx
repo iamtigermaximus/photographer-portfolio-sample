@@ -11,22 +11,22 @@ import {
   ImageWrapper,
   ImageContainer,
   Image,
-} from '../../components/common/Common.styles'
-import Header from '../../components/header/Header'
-import { PageRouteContainer } from '../contact/Contact.styles'
-import { useNavigate } from 'react-router-dom'
-import axios from 'axios'
-import { useEffect, useState } from 'react'
+} from '../../components/common/Common.styles';
+import Header from '../../components/header/Header';
+import { PageRouteContainer } from '../contact/Contact.styles';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 const Services = () => {
-  const navigate = useNavigate()
-  const [photo, setPhoto] = useState([])
+  const navigate = useNavigate();
+  const [photo, setPhoto] = useState([]);
 
   useEffect(() => {
-    axios.get('https://backend-website-media.herokuapp.com/').then((resp) => {
-      setPhoto(resp.data.items)
-    })
-  }, [])
+    axios.get('https://backend-website-media.vercel.app/').then((resp) => {
+      setPhoto(resp.data.items);
+    });
+  }, []);
   return (
     <Container>
       <Header />
@@ -60,7 +60,7 @@ const Services = () => {
         </PageBody>
       </PageContent>
     </Container>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;
